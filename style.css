@@ -31,6 +31,10 @@ body {
     color: #E595BC;
 }
 
+#mainNavbar .nav-link {
+    padding-right: 25px;
+}
+
 #mainContent {
     margin-top: 6.5%;
     margin-bottom: 6.5%;
