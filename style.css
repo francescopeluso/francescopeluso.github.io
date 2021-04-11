@@ -79,12 +79,14 @@ body {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px)  {
     body {
-        background-size: 800px;
+        background-size: 900px;
         background-size: fixed !important;
     }
+}
 
+@media (max-width: 800px) {
     .info-contact {
         width: 350px;
     }
