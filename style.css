@@ -69,8 +69,16 @@ body {
     width: 350px !important;
 }
 
+.info-contact {
+    width: 425px;
+}
+
 @media (max-width: 800px) {
     body {
         background-size: 800px;
+    }
+
+    .info-contact {
+        width: 350px;
     }
 }
