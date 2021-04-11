@@ -3,10 +3,10 @@
 
 
 body {
-    background-color: #EBC56B;
-    background-image: url(images/background.jpg);
+    background-color: #121824;
+    background-image: url(images/background2.jpg);
     background-size: cover;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
 
     font-family: 'Quicksand', sans-serif;
     color: white;
@@ -22,13 +22,13 @@ body {
 }
 
 #mainNavbar .navbar-brand {
-    color: #FBD170;
+    color: #FFFFFF;
     font-weight: 600;
     transition: color 0.5s;
 }
 
 #mainNavbar .navbar-brand:hover {
-    color: #E595BC;
+    color: #aeafff;
 }
 
 #mainNavbar .nav-link {
@@ -73,9 +73,16 @@ body {
     width: 425px;
 }
 
+@media (max-width: 768px) {
+    .to-disable {
+        display: none;
+    }
+}
+
 @media (max-width: 800px) {
     body {
         background-size: 800px;
+        background-size: fixed !important;
     }
 
     .info-contact {
