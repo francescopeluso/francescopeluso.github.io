@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-
-
 body {
     background-color: #121824;
     background-image: url(images/background.jpg);
@@ -18,6 +16,8 @@ body {
 }
 
 #mainNavbar {
+    animation: slideFromTop ease 1s;
+    transition: all 1s ;
     box-shadow: 5px 5px 25px black;
 }
 
@@ -35,17 +35,15 @@ body {
     padding-right: 25px;
 }
 
-#mainContent {
-    margin-top: 6.5%;
-    margin-bottom: 6.5%;
-    box-shadow: 5px 5px 75px black;
-}
-
 .container  {
-    background-color: rgba(0, 0, 0, 0.5);;
+    background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(12px);
     border-radius: 25px;
     padding: 25px;
+    animation: fadeInAnimation ease 1.5s;
+    margin-top: 6.5%;
+    margin-bottom: 6.5%;
+    box-shadow: 5px 5px 75px black;
 }
 
 .section {
@@ -89,5 +87,23 @@ body {
 @media (max-width: 800px) {
     .info-contact {
         width: 350px;
+    }
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+@keyframes slideFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
